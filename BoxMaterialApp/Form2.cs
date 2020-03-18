@@ -19,8 +19,8 @@ namespace BoxMaterialApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 frmForm3 = new Form3();
-            frmForm3.ShowDialog();
+            Form6 frmForm6 = new Form6();
+            frmForm6.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -64,6 +64,7 @@ namespace BoxMaterialApp
 
             button8.Visible = false;
             comboBox1.Visible = false;
+            label7.Visible = false;
             label8.Visible = false;
         }
 
@@ -227,6 +228,8 @@ namespace BoxMaterialApp
 
             //カーソルのフォーカス
             textBox1.Focus();
+            // button2 を [承諾] ボタンに設定する
+            this.AcceptButton = this.button2;
 
             //ピクチャーボックスの宣言
             var g = pictureBox2.CreateGraphics();
@@ -285,6 +288,9 @@ namespace BoxMaterialApp
                 //カーソルのフォーカス
                 textBox2.Focus();
 
+                // button3 を [承諾] ボタンに設定する
+                this.AcceptButton = this.button3;
+
                 //ピクチャーボックスをクリア
                 var g = pictureBox2.CreateGraphics();
                 g.Clear(Color.WhiteSmoke);
@@ -331,6 +337,9 @@ namespace BoxMaterialApp
 
                 //カーソルのフォーカス
                 textBox3.Focus();
+
+                // button4 を [承諾] ボタンに設定する
+                this.AcceptButton = this.button4;
 
                 //ピクチャーボックスの宣言
                 var g = pictureBox2.CreateGraphics();
@@ -388,6 +397,9 @@ namespace BoxMaterialApp
 
                 //カーソルのフォーカス
                 textBox4.Focus();
+
+                // button5 を [承諾] ボタンに設定する
+                this.AcceptButton = this.button5;
 
                 //ピクチャーボックスの宣言
                 var g = pictureBox2.CreateGraphics();
@@ -447,6 +459,9 @@ namespace BoxMaterialApp
                 //カーソルのフォーカス
                 textBox5.Focus();
 
+                // button6 を [承諾] ボタンに設定する
+                this.AcceptButton = this.button6;
+
                 //ピクチャーボックスをクリア
                 var g = pictureBox2.CreateGraphics();
                 g.Clear(Color.WhiteSmoke);
@@ -487,6 +502,9 @@ namespace BoxMaterialApp
                 //カーソルのフォーカス
                 textBox6.Focus();
 
+                // button7 を [承諾] ボタンに設定する
+                this.AcceptButton = this.button7;
+
                 //ピクチャーボックスをクリア
                 var g = pictureBox2.CreateGraphics();
                 g.Clear(Color.WhiteSmoke);
@@ -526,6 +544,7 @@ namespace BoxMaterialApp
                 //コンボボックスの表示
                 comboBox1.Visible = true;
                 button8.Visible = true;
+                label7.Visible = true;
                 label8.Visible = true;
             }
         }

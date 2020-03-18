@@ -15,12 +15,16 @@ namespace BoxMaterialApp
         public Form1()
         {
             InitializeComponent();
+
+            Form2 frmForm2 = new Form2();
+            frmForm2.ShowDialog();
+
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 frmForm2 = new Form2();
-            frmForm2.ShowDialog();
+
         }
     }
 }
