@@ -234,7 +234,8 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "A-481-5-1"});
+            "A-481-5-1",
+            "A-481-4-1"});
             this.comboBox1.Location = new System.Drawing.Point(526, 389);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;

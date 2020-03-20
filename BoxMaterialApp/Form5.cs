@@ -563,17 +563,49 @@ namespace BoxMaterialApp
             }
             else if ((string)comboBox1.SelectedItem == "A-481-5-1")
             {
+                //481-5-1の枠上から回転軸までの距離とストローク量を変数に代入
+                double handle_gap = 13;
+                double handle_stroke = 35;
+
                 double rod_over = 0;
                 double rod_under = 0;
 
                 double gat_over = 0;
                 double gat_under = 0;
 
-                rod_over = door_h - handle_h + 13 - 20 + 35; 
-                rod_under = handle_h - 13 - 20 + 35;
+                //扉の全長からハンドルが開いた状態のベロの穴までの距離を算出
+                rod_over = door_h - handle_h + handle_gap - 20 + handle_stroke; 
+                rod_under = handle_h - handle_gap - 20 + handle_stroke;
 
-                gat_over = garter_over + 4.6 - (box_h - door_h - gap) + 13;
-                gat_under = garter_under + 4.6 - gap + 13;
+                //ボックスのガーター部の幅から傷防止の２０mmまでの距離を算出
+                gat_over = garter_over + 4.6 - (box_h - door_h - gap) + 12.5;
+                gat_under = garter_under + 4.6 - gap + 12.5;
+
+                rod_over = rod_over - gat_over;
+                rod_under = rod_under - gat_under;
+
+                MessageBox.Show(Convert.ToString(rod_over) + Environment.NewLine + Convert.ToString(rod_under), "RESULT");
+            }
+            else if((string)comboBox1.SelectedItem == "A-481-4-1")
+            {
+                //481-4-1の枠上から回転軸までの距離とストローク量を変数に代入
+                double handle_gap = 18;
+                double handle_stroke = 40;
+
+                double rod_over = 0;
+                double rod_under = 0;
+
+                double gat_over = 0;
+                double gat_under = 0;
+
+                //扉の全長からハンドルが開いた状態のベロの穴までの距離を算出
+                rod_over = door_h - handle_h + handle_gap - 20 + handle_stroke;
+                rod_under = handle_h - handle_gap - 20 + handle_stroke;
+
+                //ボックスのガーター部の幅から傷防止の２０mmまでの距離を算出
+                //12.5はガーター部内面から開いた状態のロッド棒までの距離
+                gat_over = garter_over + 4.6 - (box_h - door_h - gap) + 12.5;
+                gat_under = garter_under + 4.6 - gap + 12.5;
 
                 rod_over = rod_over - gat_over;
                 rod_under = rod_under - gat_under;
